@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>YeniOlustur</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Add New Student</h2>
+        </div> 
+        <div class="col-lg-6 col-sm-12">
+            <form role="form" action="/Ogrenci/Ekle" method="post">
+                <input name="Name" class="form-control" placeholder="enter Name"/>
+                <input name="Surname" class="form-control" placeholder="enter Surname"/>
+                <input name="age" class="form-control" placeholder="enter age"/>
+                <input name="Grade" class="form-control" placeholder="enter grade"/>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-info">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

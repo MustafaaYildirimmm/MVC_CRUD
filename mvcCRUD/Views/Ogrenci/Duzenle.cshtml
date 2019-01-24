@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+@model mvcCRUD.Models.Ogrenci
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Duzenle</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form role="form" method="post" action="/Ogrenci/Guncelle">
+                <input name="ID" value="@Model.ID" class="text-hide"/>
+                <input name="Name" class="form-control" value="@Model.Name"/>
+                <input name="Surname" class="form-control" value="@Model.Surname"/>
+                <input name="Age" class="form-control" value="@Model.Age"/>
+                <input name="Grade" class="form-control" value="@Model.Grade"/>
+                <div class="text-right">
+                    <button class="btn btn-info">Update</button>
+                </div>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
